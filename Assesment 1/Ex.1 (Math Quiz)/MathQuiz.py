@@ -12,6 +12,7 @@ import random
 root = Tk()
 root.title("Math Quiz")
 root.geometry("420x340")
+root.iconbitmap("flower_leaf_spring_autumn_garden_nature_ecology_environment_plants_herb_flora_bloom_blossom_petal_icon_153841.ico")
 root.configure(bg="#16131F")
 
 
@@ -41,18 +42,14 @@ def randomInt(difficulty):
 def decideOperation():
     return random.choice(["+", "-"])
 
-
 def easy():
     start_game(1)
-
 
 def moderate():
     start_game(2)
 
-
 def advanced():
     start_game(3)
-
 
 def start_game(choosen_level):
     global level, score, question_count
@@ -88,7 +85,6 @@ def displayProblem():
     user_input.delete(0, END)
     user_input.focus()
 
-
 # Checking if user answer is correct
 def Correct():
     global score, tries
@@ -117,7 +113,6 @@ def Correct():
             messagebox.showinfo("Wrong :(", f"Incorrect again! The answer was {answer}.")
             displayProblem()
 
-
 # Switch from quiz frame to result frame and show final score
 def displayResults():
     quiz_frame.pack_forget()
@@ -139,10 +134,9 @@ def displayResults():
     final_score_label.config(text=f"Final Score: {score}/100", bg="#16131F", fg="#C1A0AC")
     grade_label.config(text=f"Rank: {grade}", bg="#16131F", fg="#F0D9E4")
 
-
 # Frame 1: Welcome Frame
 welcome_frame = Frame(root, bg="#16131F")
-Label(welcome_frame, text="✦ MATH QUIZ ✦", font=("Georgia", 22, "bold"), bg="#16131F", fg="#F0D9E4").pack(pady=(55, 10))
+Label(welcome_frame, text=" MATH QUIZ ", font=("Georgia", 22, "bold"), bg="#16131F", fg="#F0D9E4").pack(pady=(55, 10))
 Label(welcome_frame, text="Test your mental math skills", font=("Helvetica", 10), bg="#16131F", fg="#C1A0AC").pack(pady=(0, 35))
 Button(welcome_frame, text="START QUIZ", font=("Helvetica", 11, "bold"), bg="#C1A0AC", fg="#16131F", activebackground="#806C79", activeforeground="#F0D9E4", relief="flat", width=16, pady=8, cursor="hand2", command=displayMenu).pack()
 

@@ -10,6 +10,7 @@ from tkinter import *
 root = Tk()
 root.title("Student Manager")
 root.geometry("860x560")
+root.iconbitmap("flower_leaf_spring_autumn_garden_nature_ecology_environment_plants_herb_flora_bloom_blossom_petal_icon_153841.ico")
 root.configure(bg="#F5F0E6")
 
 #File handling. This will open the text file 

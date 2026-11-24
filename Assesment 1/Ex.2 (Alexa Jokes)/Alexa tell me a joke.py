@@ -6,6 +6,7 @@ from PIL import ImageTk, Image
 root = Tk()
 root.title("Alexa Tell Me A Joke")
 root.geometry("450x350")
+root.iconbitmap("flower_leaf_spring_autumn_garden_nature_ecology_environment_plants_herb_flora_bloom_blossom_petal_icon_153841.ico")
 root.resizable(False, False) #Locked window size so the background stays fit.
 
 # Adding Image and resizing it:
