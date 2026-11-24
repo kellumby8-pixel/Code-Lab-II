@@ -142,7 +142,7 @@ def displayResults():
 
 # Frame 1: Welcome Frame
 welcome_frame = Frame(root, bg="#16131F")
-Label(welcome_frame, text="✦ MATH QUIZ ✦", font=("Georgia", 22, "bold"), bg="#16131F", fg="#F0D9E4").pack(pady=(55, 10))
+Label(welcome_frame, text=" MATH QUIZ ", font=("Georgia", 22, "bold"), bg="#16131F", fg="#F0D9E4").pack(pady=(55, 10))
 Label(welcome_frame, text="Test your mental math skills", font=("Helvetica", 10), bg="#16131F", fg="#C1A0AC").pack(pady=(0, 35))
 Button(welcome_frame, text="START QUIZ", font=("Helvetica", 11, "bold"), bg="#C1A0AC", fg="#16131F", activebackground="#806C79", activeforeground="#F0D9E4", relief="flat", width=16, pady=8, cursor="hand2", command=displayMenu).pack()
 
