@@ -45,7 +45,7 @@ def get_joke():
 # It will run when the user click on "Show Punchline"
 def show_punchline():
     punchline_label.config(text=current_punchline)
-
+#buttons and labels:
 Ask_button = Button(root, text="Alexa tell me a Joke",
              font=("Ariel",12),command=get_joke)
 Ask_button.pack(pady=15)
